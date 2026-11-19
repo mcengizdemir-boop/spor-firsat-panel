@@ -68,6 +68,26 @@ def build(now=None, opener=urlopen):
                 form.append("G" if own > other else "B" if own == other else "M")
             match[side + "_form"] = {"results": form, "samples": len(form),
                                       "sufficient": len(form) == 5}
+            venue_games = sorted((g for g in finished.get(match["league_id"], [])
+                                  if g[0] < datetime.fromisoformat(match["kickoff"])
+                                  and (g[1] == team if side == "home" else g[2] == team)),
+                                 key=lambda g: g[0], reverse=True)[:5]
+            wins = draws = losses = goals_for = goals_against = 0
+            for _, home_id, away_id, hg, ag in venue_games:
+                own, other = (hg, ag) if side == "home" else (ag, hg)
+                wins += own > other
+                draws += own == other
+                losses += own < other
+                goals_for += own
+                goals_against += other
+            match[side + "_venue_form"] = {
+                "location": "home" if side == "home" else "away",
+                "sample_size": len(venue_games), "wins": wins,
+                "draws": draws, "losses": losses,
+                "goals_for": goals_for, "goals_against": goals_against,
+                "sufficient": len(venue_games) == 5,
+                "source": "OpenLigaDB completed league matches"
+            }
     return {"generated_at": now.isoformat(), "source": "OpenLigaDB",
             "scope": "German leagues 1-3; no odds or model predictions",
             "matches": sorted(unique.values(), key=lambda m: m["kickoff"])}
