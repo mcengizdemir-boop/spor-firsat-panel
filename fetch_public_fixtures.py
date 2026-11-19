@@ -110,7 +110,23 @@ def build(now=None, opener=urlopen):
                 "metric": "league points per game; not a win probability",
                 "source": "OpenLigaDB completed matches"
             }
-    return {"generated_at": now.isoformat(), "source": "OpenLigaDB",
+    coverage = {
+        "fixtures": len(unique),
+        "leagues": sorted({m["league"] for m in unique.values()}),
+        "with_five_match_form": sum(
+            bool(m["home_form"]["sufficient"] and m["away_form"]["sufficient"])
+            for m in unique.values()),
+        "with_five_match_venue_form": sum(
+            bool(m["home_venue_form"]["sufficient"] and m["away_venue_form"]["sufficient"])
+            for m in unique.values()),
+        "with_team_strength": sum(
+            bool(m["home_strength"]["matches"] and m["away_strength"]["matches"])
+            for m in unique.values()),
+        "with_verified_odds": 0,
+        "with_verified_injuries": 0,
+        "with_independently_validated_predictions": 0,
+    }
+    return {"coverage": coverage, "generated_at": now.isoformat(), "source": "OpenLigaDB",
             "scope": "German leagues 1-3; no odds or model predictions",
             "matches": sorted(unique.values(), key=lambda m: m["kickoff"])}
 
