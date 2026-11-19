@@ -1,6 +1,9 @@
 {
   "coverage": {
     "fixtures": 20,
+    "provider_requests": 6,
+    "provider_successes": 6,
+    "provider_failures": 0,
     "leagues": [
       "2. Bundesliga",
       "3. Liga",
@@ -13,7 +16,7 @@
     "with_verified_injuries": 0,
     "with_independently_validated_predictions": 0
   },
-  "generated_at": "2026-11-20T01:22:33.537666+03:00",
+  "generated_at": "2026-11-20T01:25:10.827380+03:00",
   "source": "OpenLigaDB",
   "scope": "German leagues 1-3; no odds or model predictions",
   "matches": [
