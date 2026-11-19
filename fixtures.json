@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-11-20T01:09:14.072780+03:00",
+  "source": "OpenLigaDB",
+  "scope": "Bundesliga only; no model probabilities or odds",
+  "matches": [
+    {
+      "id": 83237,
+      "kickoff": "2026-11-20T22:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "1. FC Köln",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83238,
+      "kickoff": "2026-11-21T17:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "Bayer 04 Leverkusen",
+      "away": "SC Paderborn 07",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83239,
+      "kickoff": "2026-11-21T17:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "Eintracht Frankfurt",
+      "away": "TSG Hoffenheim",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83241,
+      "kickoff": "2026-11-21T17:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "RB Leipzig",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83242,
+      "kickoff": "2026-11-21T17:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "Borussia Dortmund",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83245,
+      "kickoff": "2026-11-21T17:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "SV 07 Elversberg",
+      "away": "SC Freiburg",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    },
+    {
+      "id": 83244,
+      "kickoff": "2026-11-21T20:30:00+03:00",
+      "league": "Bundesliga",
+      "home": "FC Schalke 04",
+      "away": "VfB Stuttgart",
+      "status": "Planlandı",
+      "source": "OpenLigaDB"
+    }
+  ]
+}
