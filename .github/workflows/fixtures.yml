@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'fetch_public_fixtures.py'
+      - 'test_football.py'
       - '.github/workflows/fixtures.yml'
   workflow_dispatch:
   schedule:
