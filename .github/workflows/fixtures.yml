@@ -1,5 +1,10 @@
 name: Update public fixture calendar
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'fetch_public_fixtures.py'
+      - '.github/workflows/fixtures.yml'
   workflow_dispatch:
   schedule:
     - cron: '15 5,11,17 * * *'
