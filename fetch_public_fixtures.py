@@ -14,6 +14,7 @@ def build(now=None, opener=urlopen):
     dates = {now.date(), (now + timedelta(days=1)).date()}
     matches = []
     finished = {}
+    provider_checks = []
     for league_id, league_name in LEAGUES.items():
         for season in (now.year - 1, now.year):
             url = f"https://api.openligadb.de/getmatchdata/{league_id}/{season}"
@@ -21,8 +22,10 @@ def build(now=None, opener=urlopen):
                 request = Request(url, headers={"User-Agent": "SporFirsatDashboard/1.0"})
                 with opener(request, timeout=20) as response:
                     events = json.load(response)
+                provider_checks.append({"league": league_id, "season": season, "ok": isinstance(events, list)})
             except Exception as exc:
                 print("Fixture provider unavailable:", league_id, season, type(exc).__name__)
+                provider_checks.append({"league": league_id, "season": season, "ok": False})
                 continue
             if not isinstance(events, list):
                 continue
@@ -112,6 +115,9 @@ def build(now=None, opener=urlopen):
             }
     coverage = {
         "fixtures": len(unique),
+        "provider_requests": len(provider_checks),
+        "provider_successes": sum(check["ok"] for check in provider_checks),
+        "provider_failures": sum(not check["ok"] for check in provider_checks),
         "leagues": sorted({m["league"] for m in unique.values()}),
         "with_five_match_form": sum(
             bool(m["home_form"]["sufficient"] and m["away_form"]["sufficient"])
