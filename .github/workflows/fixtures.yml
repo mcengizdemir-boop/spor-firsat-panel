@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Test football calculations
+        run: python -m unittest test_football.py -v
       - name: Collect public match schedule
         run: python fetch_public_fixtures.py
       - name: Commit updated calendar with conflict-safe retries
