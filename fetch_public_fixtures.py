@@ -88,6 +88,28 @@ def build(now=None, opener=urlopen):
                 "sufficient": len(venue_games) == 5,
                 "source": "OpenLigaDB completed league matches"
             }
+    # Relative opponent strength: historical points per game in the same league.
+    # Descriptive evidence only, never a betting probability.
+    for match in unique.values():
+        games = [g for g in finished.get(match["league_id"], [])
+                 if g[0] < datetime.fromisoformat(match["kickoff"])]
+        points = {}
+        played = {}
+        for _, home, away, hg, ag in games:
+            for team in (home, away):
+                played[team] = played.get(team, 0) + 1
+            home_points, away_points = (3, 0) if hg > ag else (0, 3) if ag > hg else (1, 1)
+            points[home] = points.get(home, 0) + home_points
+            points[away] = points.get(away, 0) + away_points
+        for side in ("home", "away"):
+            team = match[side + "_id"]
+            count = played.get(team, 0)
+            match[side + "_strength"] = {
+                "points_per_game": round(points.get(team, 0) / count, 2) if count else None,
+                "matches": count,
+                "metric": "league points per game; not a win probability",
+                "source": "OpenLigaDB completed matches"
+            }
     return {"generated_at": now.isoformat(), "source": "OpenLigaDB",
             "scope": "German leagues 1-3; no odds or model predictions",
             "matches": sorted(unique.values(), key=lambda m: m["kickoff"])}
