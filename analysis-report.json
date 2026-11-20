@@ -1,9 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T10:36:17.274132+00:00",
+  "model_comparison": {
+    "paired_matches": 312,
+    "holdout_samples": 78,
+    "overall_brier_delta": -0.036739,
+    "holdout_brier_delta": null,
+    "improves_both_periods": null,
+    "independently_validated": false
+  },
+  "generated_at": "2026-11-20T11:58:06.533820+00:00",
   "source": "private opportunity_report, sanitized",
   "fixture_count": 50,
   "fixtures_with_verified_quotes": 0,
+  "fixtures_with_conflicting_odds": 0,
+  "fixtures_missing_observed_odds": 50,
+  "fixtures_missing_validated_probabilities": 50,
+  "fixtures_with_complete_form": 39,
   "assessed_count": 0,
   "opportunities": [],
   "withheld_assessments": 0,
