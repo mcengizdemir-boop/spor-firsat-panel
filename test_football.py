@@ -93,6 +93,21 @@ class FixturesTests(unittest.TestCase):
         self.assertEqual(cv["with_verified_odds"], 0)
         self.assertEqual(cv["with_independently_validated_predictions"], 0)
 
+    def test_provider_outage_does_not_publish_empty_calendar(self):
+        def failed_opener(request, timeout=20):
+            raise OSError("provider unavailable")
+        with self.assertRaisesRegex(RuntimeError, "All fixture providers failed"):
+            build(datetime(2026, 11, 20, 12, tzinfo=TZ), failed_opener)
+
+    def test_partial_provider_outage_is_counted(self):
+        def partial_opener(request, timeout=20):
+            if "/bl1/2026" in request.full_url:
+                return FakeResponse([])
+            raise OSError("provider unavailable")
+        result = build(datetime(2026, 11, 20, 12, tzinfo=TZ), partial_opener)
+        self.assertEqual(result["coverage"]["provider_successes"], 1)
+        self.assertEqual(result["coverage"]["provider_failures"], 5)
+
     def test_public_json_schema(self):
         data = json.loads(Path("fixtures.json").read_text(encoding="utf-8"))
         self.assertIsInstance(data["matches"], list)
