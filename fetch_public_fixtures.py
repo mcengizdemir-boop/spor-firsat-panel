@@ -113,6 +113,8 @@ def build(now=None, opener=urlopen):
                 "metric": "league points per game; not a win probability",
                 "source": "OpenLigaDB completed matches"
             }
+    if provider_checks and not any(check["ok"] for check in provider_checks):
+        raise RuntimeError("All fixture providers failed; preserve the last published calendar")
     coverage = {
         "fixtures": len(unique),
         "provider_requests": len(provider_checks),
