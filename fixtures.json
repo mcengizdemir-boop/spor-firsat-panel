@@ -1,6 +1,6 @@
 {
   "coverage": {
-    "fixtures": 20,
+    "fixtures": 24,
     "provider_requests": 6,
     "provider_successes": 6,
     "provider_failures": 0,
@@ -9,289 +9,17 @@
       "3. Liga",
       "Bundesliga"
     ],
-    "with_five_match_form": 20,
-    "with_five_match_venue_form": 17,
-    "with_team_strength": 20,
+    "with_five_match_form": 24,
+    "with_five_match_venue_form": 21,
+    "with_team_strength": 24,
     "with_verified_odds": 0,
     "with_verified_injuries": 0,
     "with_independently_validated_predictions": 0
   },
-  "generated_at": "2026-11-20T16:58:16.566027+03:00",
+  "generated_at": "2026-11-21T02:03:56.569113+03:00",
   "source": "OpenLigaDB",
   "scope": "German leagues 1-3; no odds or model predictions",
   "matches": [
-    {
-      "id": 83697,
-      "kickoff": "2026-11-20T20:30:00+03:00",
-      "league": "2. Bundesliga",
-      "league_id": "bl2",
-      "home_id": 118,
-      "away_id": 199,
-      "home": "SV Darmstadt 98",
-      "away": "1. FC Heidenheim 1846",
-      "status": "Planlandı",
-      "source": "OpenLigaDB",
-      "home_form": {
-        "results": [
-          "M",
-          "B",
-          "B",
-          "M",
-          "G"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "home_venue_form": {
-        "location": "home",
-        "sample_size": 5,
-        "wins": 2,
-        "draws": 2,
-        "losses": 1,
-        "goals_for": 6,
-        "goals_against": 4,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "away_form": {
-        "results": [
-          "B",
-          "M",
-          "B",
-          "M",
-          "B"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "away_venue_form": {
-        "location": "away",
-        "sample_size": 5,
-        "wins": 1,
-        "draws": 1,
-        "losses": 3,
-        "goals_for": 6,
-        "goals_against": 11,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "home_strength": {
-        "points_per_game": 1.36,
-        "matches": 45,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      },
-      "away_strength": {
-        "points_per_game": 1.45,
-        "matches": 11,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      }
-    },
-    {
-      "id": 83705,
-      "kickoff": "2026-11-20T20:30:00+03:00",
-      "league": "2. Bundesliga",
-      "league_id": "bl2",
-      "home_id": 83,
-      "away_id": 78,
-      "home": "DSC Arminia Bielefeld",
-      "away": "1. FC Magdeburg",
-      "status": "Planlandı",
-      "source": "OpenLigaDB",
-      "home_form": {
-        "results": [
-          "G",
-          "G",
-          "M",
-          "G",
-          "G"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "home_venue_form": {
-        "location": "home",
-        "sample_size": 5,
-        "wins": 3,
-        "draws": 2,
-        "losses": 0,
-        "goals_for": 12,
-        "goals_against": 6,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "away_form": {
-        "results": [
-          "G",
-          "B",
-          "G",
-          "M",
-          "G"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "away_venue_form": {
-        "location": "away",
-        "sample_size": 5,
-        "wins": 1,
-        "draws": 2,
-        "losses": 2,
-        "goals_for": 6,
-        "goals_against": 6,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "home_strength": {
-        "points_per_game": 1.24,
-        "matches": 45,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      },
-      "away_strength": {
-        "points_per_game": 1.31,
-        "matches": 45,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      }
-    },
-    {
-      "id": 84883,
-      "kickoff": "2026-11-20T21:00:00+03:00",
-      "league": "3. Liga",
-      "league_id": "bl3",
-      "home_id": 126,
-      "away_id": 2199,
-      "home": "TSV Havelse",
-      "away": "Viktoria Köln",
-      "status": "Planlandı",
-      "source": "OpenLigaDB",
-      "home_form": {
-        "results": [
-          "M",
-          "B",
-          "G",
-          "B",
-          "B"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "home_venue_form": {
-        "location": "home",
-        "sample_size": 5,
-        "wins": 1,
-        "draws": 3,
-        "losses": 1,
-        "goals_for": 9,
-        "goals_against": 10,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "away_form": {
-        "results": [
-          "G",
-          "G",
-          "G",
-          "B",
-          "B"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "away_venue_form": {
-        "location": "away",
-        "sample_size": 5,
-        "wins": 3,
-        "draws": 1,
-        "losses": 1,
-        "goals_for": 10,
-        "goals_against": 5,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "home_strength": {
-        "points_per_game": 0.88,
-        "matches": 51,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      },
-      "away_strength": {
-        "points_per_game": 1.57,
-        "matches": 51,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      }
-    },
-    {
-      "id": 83237,
-      "kickoff": "2026-11-20T22:30:00+03:00",
-      "league": "Bundesliga",
-      "league_id": "bl1",
-      "home_id": 40,
-      "away_id": 65,
-      "home": "FC Bayern München",
-      "away": "1. FC Köln",
-      "status": "Planlandı",
-      "source": "OpenLigaDB",
-      "home_form": {
-        "results": [
-          "G",
-          "B",
-          "G",
-          "G",
-          "B"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "home_venue_form": {
-        "location": "home",
-        "sample_size": 5,
-        "wins": 4,
-        "draws": 1,
-        "losses": 0,
-        "goals_for": 25,
-        "goals_against": 5,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "away_form": {
-        "results": [
-          "M",
-          "B",
-          "B",
-          "M",
-          "G"
-        ],
-        "samples": 5,
-        "sufficient": true
-      },
-      "away_venue_form": {
-        "location": "away",
-        "sample_size": 5,
-        "wins": 0,
-        "draws": 1,
-        "losses": 4,
-        "goals_for": 4,
-        "goals_against": 13,
-        "sufficient": true,
-        "source": "OpenLigaDB completed league matches"
-      },
-      "home_strength": {
-        "points_per_game": 2.56,
-        "matches": 43,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      },
-      "away_strength": {
-        "points_per_game": 0.95,
-        "matches": 43,
-        "metric": "league points per game; not a win probability",
-        "source": "OpenLigaDB completed matches"
-      }
-    },
     {
       "id": 83689,
       "kickoff": "2026-11-21T15:00:00+03:00",
@@ -1376,6 +1104,550 @@
       "away_strength": {
         "points_per_game": 1.29,
         "matches": 45,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 83698,
+      "kickoff": "2026-11-22T15:30:00+03:00",
+      "league": "2. Bundesliga",
+      "league_id": "bl2",
+      "home_id": 76,
+      "away_id": 177,
+      "home": "1. FC Kaiserslautern",
+      "away": "Dynamo Dresden",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "G",
+          "M",
+          "G",
+          "G",
+          "B"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 3,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 6,
+        "goals_against": 3,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "M",
+          "M",
+          "G",
+          "B"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 0,
+        "draws": 2,
+        "losses": 3,
+        "goals_for": 7,
+        "goals_against": 13,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.62,
+        "matches": 45,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.16,
+        "matches": 45,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 83702,
+      "kickoff": "2026-11-22T15:30:00+03:00",
+      "league": "2. Bundesliga",
+      "league_id": "bl2",
+      "home_id": 105,
+      "away_id": 36,
+      "home": "Karlsruher SC",
+      "away": "VfL Osnabrück",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "M",
+          "G",
+          "M",
+          "G",
+          "M"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 2,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 8,
+        "goals_against": 10,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "M",
+          "M",
+          "G",
+          "M",
+          "B"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 1,
+        "draws": 1,
+        "losses": 3,
+        "goals_for": 6,
+        "goals_against": 9,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.22,
+        "matches": 45,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.0,
+        "matches": 11,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 83706,
+      "kickoff": "2026-11-22T15:30:00+03:00",
+      "league": "2. Bundesliga",
+      "league_id": "bl2",
+      "home_id": 93,
+      "away_id": 54,
+      "home": "Energie Cottbus",
+      "away": "Hertha BSC",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "B",
+          "M",
+          "B",
+          "B",
+          "M"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 1,
+        "draws": 2,
+        "losses": 2,
+        "goals_for": 9,
+        "goals_against": 9,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "G",
+          "G",
+          "B",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 4,
+        "draws": 1,
+        "losses": 0,
+        "goals_for": 13,
+        "goals_against": 5,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.0,
+        "matches": 11,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.82,
+        "matches": 45,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 84880,
+      "kickoff": "2026-11-22T15:30:00+03:00",
+      "league": "3. Liga",
+      "league_id": "bl3",
+      "home_id": 184,
+      "away_id": 171,
+      "home": "VfB Stuttgart II",
+      "away": "FC Ingolstadt 04",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "G",
+          "B",
+          "M",
+          "G",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 2,
+        "draws": 1,
+        "losses": 2,
+        "goals_for": 9,
+        "goals_against": 9,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "B",
+          "G",
+          "G",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 3,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 7,
+        "goals_against": 4,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.25,
+        "matches": 51,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.37,
+        "matches": 51,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 83240,
+      "kickoff": "2026-11-22T17:30:00+03:00",
+      "league": "Bundesliga",
+      "league_id": "bl1",
+      "home_id": 95,
+      "away_id": 81,
+      "home": "FC Augsburg",
+      "away": "1. FSV Mainz 05",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "M",
+          "M",
+          "B",
+          "M",
+          "B"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 1,
+        "draws": 3,
+        "losses": 1,
+        "goals_for": 9,
+        "goals_against": 7,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "M",
+          "M",
+          "M",
+          "G",
+          "M"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 4,
+        "draws": 0,
+        "losses": 1,
+        "goals_for": 13,
+        "goals_against": 7,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.21,
+        "matches": 43,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.16,
+        "matches": 43,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 84881,
+      "kickoff": "2026-11-22T18:30:00+03:00",
+      "league": "3. Liga",
+      "league_id": "bl3",
+      "home_id": 417,
+      "away_id": 174,
+      "home": "1. FC Saarbrücken",
+      "away": "SV Wehen Wiesbaden",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "M",
+          "G",
+          "M",
+          "G",
+          "M"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 2,
+        "draws": 0,
+        "losses": 3,
+        "goals_for": 8,
+        "goals_against": 11,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "G",
+          "G",
+          "B",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 3,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 11,
+        "goals_against": 4,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.25,
+        "matches": 51,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.45,
+        "matches": 51,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 83243,
+      "kickoff": "2026-11-22T19:30:00+03:00",
+      "league": "Bundesliga",
+      "league_id": "bl1",
+      "home_id": 134,
+      "away_id": 100,
+      "home": "SV Werder Bremen",
+      "away": "Hamburger SV",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "M",
+          "G",
+          "G",
+          "B",
+          "B"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 3,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 10,
+        "goals_against": 7,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "M",
+          "M",
+          "G",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 1,
+        "draws": 0,
+        "losses": 4,
+        "goals_for": 4,
+        "goals_against": 13,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.09,
+        "matches": 43,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.16,
+        "matches": 43,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      }
+    },
+    {
+      "id": 84877,
+      "kickoff": "2026-11-22T21:30:00+03:00",
+      "league": "3. Liga",
+      "league_id": "bl3",
+      "home_id": 107,
+      "away_id": 102,
+      "home": "MSV Duisburg",
+      "away": "Hansa Rostock",
+      "status": "Planlandı",
+      "source": "OpenLigaDB",
+      "home_form": {
+        "results": [
+          "G",
+          "B",
+          "M",
+          "B",
+          "G"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "home_venue_form": {
+        "location": "home",
+        "sample_size": 5,
+        "wins": 3,
+        "draws": 2,
+        "losses": 0,
+        "goals_for": 12,
+        "goals_against": 7,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "away_form": {
+        "results": [
+          "G",
+          "M",
+          "B",
+          "M",
+          "M"
+        ],
+        "samples": 5,
+        "sufficient": true
+      },
+      "away_venue_form": {
+        "location": "away",
+        "sample_size": 5,
+        "wins": 1,
+        "draws": 1,
+        "losses": 3,
+        "goals_for": 4,
+        "goals_against": 9,
+        "sufficient": true,
+        "source": "OpenLigaDB completed league matches"
+      },
+      "home_strength": {
+        "points_per_game": 1.9,
+        "matches": 51,
+        "metric": "league points per game; not a win probability",
+        "source": "OpenLigaDB completed matches"
+      },
+      "away_strength": {
+        "points_per_game": 1.69,
+        "matches": 51,
         "metric": "league points per game; not a win probability",
         "source": "OpenLigaDB completed matches"
       }
