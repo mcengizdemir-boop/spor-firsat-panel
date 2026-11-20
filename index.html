@@ -24,7 +24,7 @@ const date=new Date(report.generated_at),stale=!Number.isFinite(date.getTime())|
 const entries=report.opportunities.filter(x=>x&&x.validated===true&&x.calibrated===true&&x.independent_holdout===true&&x.source_odds===true&&Number.isFinite(Number(x.probability))&&Number(x.probability)>0&&Number(x.probability)<1&&Number(x.odds)>1&&['high','value','surprise'].includes(x.category));
 data=stale?[]:entries;render();
 status.textContent=(stale?'UYARI: Rapor 24 saatten eski; öneriler gösterilmiyor.':'Özel analiz raporu bağlandı.')+' · Son güncelleme: '+(Number.isFinite(date.getTime())?date.toLocaleString('tr-TR',{timeZone:'Europe/Istanbul'}):'bilinmiyor');
-coverage.textContent='Analiz edilen maç: '+Number(report.fixture_count||0)+' · Kaynaklı oran bulunan maç: '+Number(report.fixtures_with_verified_quotes||0)+' · Doğrulanmış aday: '+data.length;
+coverage.textContent='Analiz edilen maç: '+Number(report.fixture_count||0)+' · Kaynaklı oran bulunan maç: '+Number(report.fixtures_with_verified_quotes||0)+' · Doğrulanmış aday: '+data.length+' · Doğrulama eksikliği nedeniyle gizlenen: '+Number(report.withheld_assessments||0);
 }catch(error){status.textContent='Otomatik rapor okunamadı: '+error.message}
 }
 loadPrivateReport();
