@@ -16,7 +16,7 @@
     "with_verified_injuries": 0,
     "with_independently_validated_predictions": 0
   },
-  "generated_at": "2026-11-28T03:31:22.726814+03:00",
+  "generated_at": "2026-11-28T17:08:22.021944+03:00",
   "source": "OpenLigaDB",
   "scope": "German leagues 1-3; no odds or model predictions",
   "matches": [
@@ -29,7 +29,7 @@
       "away_id": 105,
       "home": "Hertha BSC",
       "away": "Karlsruher SC",
-      "status": "Planlandı",
+      "status": "Tamamlandı",
       "source": "OpenLigaDB",
       "home_form": {
         "results": [
@@ -97,7 +97,7 @@
       "away_id": 98,
       "home": "Dynamo Dresden",
       "away": "FC St. Pauli",
-      "status": "Planlandı",
+      "status": "Tamamlandı",
       "source": "OpenLigaDB",
       "home_form": {
         "results": [
@@ -165,7 +165,7 @@
       "away_id": 76,
       "home": "Holstein Kiel",
       "away": "1. FC Kaiserslautern",
-      "status": "Planlandı",
+      "status": "Tamamlandı",
       "source": "OpenLigaDB",
       "home_form": {
         "results": [
